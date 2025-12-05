@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica de Números Complexos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Complexos</h1>
+        
+        <div class="input-group">
+            <label for="expressao">Digite a Expressão:</label>
+            <small>Ex: (3 + 2i) * (A + B)</small>
+            <input type="text" id="expressao" placeholder="Digite aqui..." autocomplete="off">
+        </div>
+
+        <div class="buttons">
+            <button onclick="iniciarCalculo()">Calcular / Executar</button>
+            <button class="secondary" onclick="verificarIgualdade()">Comparar Expressões</button>
+            <button class="secondary" onclick="limpar()">Limpar</button>
+        </div>
+
+        <h3>Resultado:</h3>
+        <div id="console">Aguardando entrada...</div>
+
+        <h3>Árvore de Execução:</h3>
+        <div class="tree-container" id="tree-view">
+            <span style="color:#888">Nenhuma árvore gerada.</span>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+É estte
